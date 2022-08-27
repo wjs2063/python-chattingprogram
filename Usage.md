@@ -1,8 +1,41 @@
 
+## USAGE 
 
+STEP 1
 
+카프카폴더가있는 /Users/pn_jh/Desktop/kafka/kafka_2.13-3.2.0 로 이동
+Zookeeper 실행
+```  
+bin/zookeeper-server-start.sh config/zookeeper.properties   : Kafka 파일이 들어있는 폴더로 터미널 진입 후 지정 ( 상대경로이기때문) , 주키퍼실행
+```
 
+STEP 2
 
+카프카 서버 실행
+```
+bin/kafka-server-start.sh config/server.properties           : Kafka 서버 실행
+```
+
+STEP 3
+
+토픽생성
+```
+bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1 --topic first-kafka01
+```
+
+STEP 4
+
+서버 소스코드 실행 
+
+```
+ python /Users/pn_jh/Desktop/socket-chat-master/server.py
+```
+STEP 5
+클라이언트 소스코드 실행 ( 터미널 여러개 띄워서 여러개 실행해야함)
+
+```
+python /Users/pn_jh/Desktop/socket-chat-master/client.py
+```
 
 
 
