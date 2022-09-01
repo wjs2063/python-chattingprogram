@@ -23,5 +23,8 @@ Prod2 ->  송신 -> Cons1 가 수신 하는 방식으로 실시간 채팅메시�
 
 일단은 Consumer 가 특정 파티션만 구독 하도록 하고 , Prod 와 Cons 는 특정 파티션 에게만 송/수신을 하도록 구현
 
+[공식문서]
+https://kafka-python.readthedocs.io/en/master/apidoc/KafkaProducer.html?highlight=send#kafka.KafkaProducer.send
+
 
 1. 그렇다면 몇개의 Topic 과 Partition 들을 구성을 해야하는가? 
