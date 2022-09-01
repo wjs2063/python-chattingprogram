@@ -28,3 +28,4 @@ https://kafka-python.readthedocs.io/en/master/apidoc/KafkaProducer.html?highligh
 
 
 1. 그렇다면 몇개의 Topic 과 Partition 들을 구성을 해야하는가? 
+2. 서버가 이름 + 파티션 까지 지정해주면 될것같다
