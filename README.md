@@ -38,6 +38,6 @@ https://kafka-python.readthedocs.io/en/master/apidoc/KafkaProducer.html?highligh
 # Error 및 중요한점 
 참고 - https://kafka-python.readthedocs.io/en/2.0.1/apidoc/KafkaConsumer.html#kafka.KafkaConsumer.subscribe
 
-### 특정 토픽의 특정 파티션만  구독하도록 설정하는것 !! 내가 원하는 메세지 흐름을 control 하는것이므로 중요하다. 
+### 특정 토픽의 특정 파티션만  구독하도록 설정하는것 !! 내가 원하는 메세지저장소와 흐름을 control 하는것이므로 중요하다. 
 단 KafkaConsumer 설정시 TOPIC 구독 지정하지말자 -> 따로 지정
 consumer.assign([TopicPartition(TOPIC, 1)]) 와 같이 지정해주자 list 형식이고 꼭 TopicPartition()
