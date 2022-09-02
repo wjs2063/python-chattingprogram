@@ -22,6 +22,7 @@ Prod2 ->  송신 -> Cons1 가 수신 하는 방식으로 실시간 채팅메시�
 카프카 브로커 내에 다수의 토픽 , 1개의 토픽 내에 다수의 파티션 ,
 
 일단은 Consumer 가 특정 파티션만 구독 하도록 하고 , Prod 와 Cons 는 특정 파티션 에게만 송/수신을 하도록 구현
+producer.send( partition = 내가원하는 partition ) 으로 특정 파티션에 전송하고 컨슈머는 특정 파티션만 구독하도록 설정할것이다
 
 [공식문서]
 https://kafka-python.readthedocs.io/en/master/apidoc/KafkaProducer.html?highlight=send#kafka.KafkaProducer.send
