@@ -20,7 +20,7 @@ STEP 3
 
 토픽생성
 ```
-bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --partitions 10 --replication-factor 1 --topic first-kafka01
+bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --partitions 10 --replication-factor 1 --topic chat-kafka01
 ```
 
 STEP 4
