@@ -28,13 +28,13 @@ STEP 4
 서버 소스코드 실행 
 
 ```
- python /Users/pn_jh/Desktop/socket-chat-master/server.py
+ python /Users/pn_jh/Desktop/Kafka-realtime_chatting/chat_source/server.py
 ```
 STEP 5
 클라이언트 소스코드 실행 ( 터미널 여러개 띄워서 여러개 실행해야함)
 
 ```
-python /Users/pn_jh/Desktop/socket-chat-master/client.py
+python /Users/pn_jh/Desktop/Kafka-realtime_chatting/chat_source/client.py
 ```
 
 
