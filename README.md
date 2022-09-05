@@ -26,8 +26,6 @@ producer.send( partition = 내가원하는 partition ) 으로 특정 파티션�
 
 consumer.assign([TopicPartition(TOPIC, 1)]) 와 같이 지정해주자 list 형식이고 꼭 TopicPartition() 이라는 함수를 써서 진행해야함
 
-참고 [공식문서]
-https://kafka-python.readthedocs.io/en/master/apidoc/KafkaProducer.html?highlight=send#kafka.KafkaProducer.send
 
 
 1. 그렇다면 몇개의 Topic 과 Partition 들을 구성을 해야하는가? 
@@ -41,3 +39,13 @@ https://kafka-python.readthedocs.io/en/master/apidoc/KafkaProducer.html?highligh
 ### 특정 토픽의 특정 파티션만  구독하도록 설정하는것 !! 내가 원하는 메세지저장소와 흐름을 control 하는것이므로 중요하다. 
 단 KafkaConsumer instance 생성시  TOPIC 구독 지정하지말자 -> 따로 지정
 consumer.assign([TopicPartition(TOPIC, 1)]) 와 같이 지정해주자 list 형식이고 꼭 TopicPartition()
+
+
+
+
+
+
+## 참고 공식문서
+
+https://kafka-python.readthedocs.io/en/master/apidoc/KafkaProducer.html?highlight=send#kafka.KafkaProducer.send
+https://twisted.org/documents/18.7.0/api/twisted.internet.interfaces.IProtocol.html
