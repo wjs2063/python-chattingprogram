@@ -76,9 +76,7 @@ class Chat(protocol.Protocol):
     
     def connectionLost(self,reason):
         print(f"{self.transport}connections is Lost.. Bye")
-        print(table)
         self.exclude_partition(table)
-        print(table)
         print("partition 삭제완료")
 
 class ChatFactory(protocol.Factory):
