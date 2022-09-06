@@ -3,7 +3,7 @@
 
 STEP 1
 
-카프카폴더가있는 /Users/pn_jh/Desktop/kafka/kafka_2.13-3.2.0 로 이동
+카프카폴더가있는 /Users/pn_jh/Desktop/개발/kafka/kafka_2.13-3.2.0 로 이동
 Zookeeper 실행
 ```  
 bin/zookeeper-server-start.sh config/zookeeper.properties   : Kafka 파일이 들어있는 폴더로 터미널 진입 후 지정 ( 상대경로이기때문) , 주키퍼실행
