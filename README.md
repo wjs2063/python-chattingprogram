@@ -35,6 +35,10 @@ consumer.assign([TopicPartition(TOPIC, 1)]) 와 같이 지정해주자 list 형�
 2022 - 09 - 04 에 특정 파티션만 이용하여 구현 완료 
 
 이제 partition 을 반납하고 새로운 사용자가 해당파티션을 이용할수있게 파티션을 리셋시켜 재활용 할수있게 만들어야 한다 . ( 메세지 기록을 DB 에 추가하는것은 추후에 연결) 
+
+2022 - 09 - 07 
+의문점 : 토픽을 n 개 생성 (각 토픽당 파티션 2개) vs 토픽을 1개생성 ( 파티션 2n 개 생성) 무엇이 더 효율적일까? 
+
 ----------------------------------------------------
 # Error 및 중요한점 
 참고 - https://kafka-python.readthedocs.io/en/2.0.1/apidoc/KafkaConsumer.html#kafka.KafkaConsumer.subscribe
