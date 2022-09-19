@@ -57,3 +57,10 @@ consumer.assign([TopicPartition(TOPIC, 1)]) 와 같이 지정해주자 list 형�
 
 https://kafka-python.readthedocs.io/en/master/apidoc/KafkaProducer.html?highlight=send#kafka.KafkaProducer.send
 https://twisted.org/documents/18.7.0/api/twisted.internet.interfaces.IProtocol.html
+
+
+
+####
+```
+bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+```
