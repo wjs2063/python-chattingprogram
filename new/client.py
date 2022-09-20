@@ -15,7 +15,7 @@ import socket
 import select
 import sys
 
-TOPIC = 'chat-kafka01'
+#TOPIC = 'chat-kafka01'
 # 소켓 연결
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect(('127.0.0.1', 8000))
@@ -30,9 +30,9 @@ def get_name_from_server():
         for desc in read:
             if desc == s:
                 data = s.recv(4096)
-                msg = data.decode().split()
-                name,partition, partner_partition = msg[0],int(msg[1]),int(msg[2])
-                return name,partition,partner_partition
+                msg = data.decode().split('-')
+                TOPIC,partition,partner_partition = msg[0],int(msg[1]),int(msg[2])
+                return TOPIC,partition,partner_partition
             
 # producer 메세지를 보낼때 사용하는 message
 def send_message(partner_partition):
@@ -59,8 +59,8 @@ def receive_message():
 
 # 이름 받아오기
 # 상대 에게 전송할 TOPIC과 partition 번호도 필요함
-name,partition,partner_partition = get_name_from_server()
-print(name,partition,partner_partition)
+TOPIC,partition,partner_partition = get_name_from_server()
+print(TOPIC,partition,partner_partition)
 # 카프카 컨슈머,프로듀서 생성하기
 producer = KafkaProducer(bootstrap_servers = ['localhost:9092'],
                          api_version = (0,10,2),
