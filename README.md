@@ -49,7 +49,7 @@ consumer.assign([TopicPartition(TOPIC, 1)]) 와 같이 지정해주자 list 형�
 consumer.assign([TopicPartition(TOPIC, 1)]) 와 같이 지정해주자 list 형식이고 꼭 TopicPartition()
 
 
-
+카프카에서 토픽을 생성할 때 유효한 문자는 [영문, 숫자, '.', '_', '-']만 사용할 수 있다. 그리고 유의할 점은 마침표(.)와 밑줄(_)은 충돌할 수 있기 때문에 둘 중 하나만 사용하는 것이 좋다.
 
 
 
